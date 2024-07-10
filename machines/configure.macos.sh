@@ -16,11 +16,11 @@ LUAJIT_LIB_DIR=$GKYLSOFT/luajit/lib
 LUAJIT_SHARE_DIR=$GKYLSOFT/luajit/share/luajit-2.1.0-beta3
 
 ## MPI options
-MPICC=$GKYLSOFT/openmpi/bin/mpicc
-MPICXX=$GKYLSOFT/openmpi/bin/mpicxx
+MPICC=mpicc
+MPICXX=mpicxx
 ENABLE_MPI="--enable-mpi"
-MPI_INC_DIR=$GKYLSOFT/openmpi/include
-MPI_LIB_DIR=$GKYLSOFT/openmpi/lib
+MPI_INC_DIR=/opt/homebrew/include
+MPI_LIB_DIR=/opt/homebrew/lib
 MPI_LINK_LIBS="mpi"
 
 # ADIOS options

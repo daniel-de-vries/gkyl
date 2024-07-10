@@ -3,7 +3,7 @@
 # Build directory
 OUT=build
 # Install location
-GKYLSOFT=$HOME/gkylsoft
+GKYLSOFT=/workspaces/stellar/gkylsoft
 
 # Compile flags (set optimization/debug flags here)
 CC=gcc

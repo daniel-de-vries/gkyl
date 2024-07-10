@@ -248,10 +248,10 @@ build_czmq() {
 
 echo "Installations will be in $PREFIX"
 
-build_openmpi
+# build_openmpi
 build_gkylzero
-build_luajit
-build_luarocks
-build_adios
-build_zmq
-build_czmq
+# build_luajit
+# build_luarocks
+# build_adios
+# build_zmq
+# build_czmq
