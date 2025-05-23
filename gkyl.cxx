@@ -26,7 +26,7 @@
 
 // Compiler specific includes
 #if defined(__GNUC__) || defined(__GNUG__)
-#if defined(__arm__) || defined(__arm64__)
+#if defined(__arm__) || defined(__arm64__) || defined(__aarch64__) || defined(__aarch64__)
 // nothing for arm chips
 #else
 #include <xmmintrin.h>
@@ -35,7 +35,7 @@
 
 #if defined(__clang__)
 #if defined(__APPLE__)
-#if defined(__arm__) || defined(__arm64__)
+#if defined(__arm__) || defined(__arm64__) || defined(__aarch64__)
 // nothing for Apple m1 chip
 #else
 #include <fenv.h>
@@ -133,7 +133,7 @@ main(int argc, char **argv) {
   // code. Otherwise, the code become horribly slow in some rare (but
   // not impossible to reproduce) situations.
 #if defined(__GNUC__) || defined(__GNUG__)
-#if defined(__arm__) || defined(__arm64__)
+#if defined(__arm__) || defined(__arm64__) || defined(__aarch64__)
 // nothing for arm chips
 #else
   _MM_SET_FLUSH_ZERO_MODE(_MM_FLUSH_ZERO_ON);
@@ -142,7 +142,7 @@ main(int argc, char **argv) {
 
 #if defined(__clang__)
 #if defined(__APPLE__)
-#if defined(__arm__) || defined(__arm64__)
+#if defined(__arm__) || defined(__arm64__) || defined(__aarch64__)
 // nothing for Apple m1 chip
 #else
   fesetenv(FE_DFL_DISABLE_SSE_DENORMS_ENV);
