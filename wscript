@@ -252,6 +252,7 @@ def buildExec(bld):
     appendToList(fullRpath, bld.env.LIBPATH_LUAJIT)
     appendToList(fullRpath, bld.env.LIBPATH_gkylzero)
     appendToList(fullRpath, bld.env.LIBPATH_ADIOS)
+    appendToList(fullRpath, bld.env.LIBPATH_MPI)
 
 
     # build gkyl executable
