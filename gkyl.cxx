@@ -26,7 +26,7 @@
 
 // Compiler specific includes
 #if defined(__GNUC__) || defined(__GNUG__)
-#if defined(__arm__) || defined(__arm64__) || defined(__aarch64__) || defined(__aarch64__)
+#if defined(__arm__) || defined(__arm64__) || defined(__aarch64__)
 // nothing for arm chips
 #else
 #include <xmmintrin.h>
